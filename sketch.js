@@ -109,7 +109,7 @@ function keyPressed(){
 
 
 async function getTime () {
-    var resp = await fetch("http://worldtimeapi.org/api/timezone/America/Detroit");
+    var resp = await fetch("https://worldtimeapi.org/api/timezone/America/Detroit");
     var respJSON = await resp.json(); 
     var datetime = respJSON.datetime;
     var hr = datetime.slice(11,13);
